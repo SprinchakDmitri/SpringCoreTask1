@@ -10,15 +10,5 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("main.models")
 public class Config {
-    @Bean
-    DoctorSpecialization getDoctorSpecialization(){
-        DoctorSpecialization doctorSpecialization = new DoctorSpecialization();
-        doctorSpecialization.setDoctorSpecialization("Surgeon");
-        return doctorSpecialization;
-    }
 
-    @Bean
-    Doctor getDoctor(){
-        return new Doctor(getDoctorSpecialization());
-    }
 }

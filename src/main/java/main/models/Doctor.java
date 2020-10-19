@@ -33,9 +33,7 @@ public class Doctor {
         this.name = name;
     }
 
-    public void setDoctorSpecialization(DoctorSpecialization doctorSpecialization) {
-        this.doctorSpecialization = doctorSpecialization;
-    }
+    
 
     public void setCabinet(int cabinet) {
         this.cabinet = cabinet;
