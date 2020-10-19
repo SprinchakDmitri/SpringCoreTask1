@@ -1,5 +1,6 @@
 package main.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
@@ -8,6 +9,7 @@ public class TreatingDoctor {
 
     private Doctor doctor;
 
+    @Autowired
     public TreatingDoctor(Doctor doctor){
         this.doctor = doctor;
     }

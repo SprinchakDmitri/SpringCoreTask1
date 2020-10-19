@@ -10,6 +10,7 @@ public class Doctor {
     private DoctorSpecialization doctorSpecialization;
     private int cabinet;
 
+    @Autowired
     public Doctor(DoctorSpecialization doctorSpecialization){
         this.name = "John Doe";
         this.doctorSpecialization = doctorSpecialization;
