@@ -1,8 +1,16 @@
 package main.models;
 
+import org.springframework.stereotype.Component;
+
+
+@Component
 public class TreatingDoctor {
 
     private Doctor doctor;
+
+    public TreatingDoctor(Doctor doctor){
+        this.doctor = doctor;
+    }
 
     public void setDoctor(Doctor doctor){
         this.doctor = doctor;

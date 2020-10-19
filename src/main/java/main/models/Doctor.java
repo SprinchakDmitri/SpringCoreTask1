@@ -1,13 +1,21 @@
 package main.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Doctor {
 
     private String name;
     private DoctorSpecialization doctorSpecialization;
     private int cabinet;
 
+    public Doctor(DoctorSpecialization doctorSpecialization){
+        this.name = "John Doe";
+        this.doctorSpecialization = doctorSpecialization;
+        this.cabinet = 401;
+
+    }
     public String getDoctorName() {
         return name;
     }
